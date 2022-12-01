@@ -1,0 +1,22 @@
+body,html {
+
+}
+
+
+
+div {
+    
+    margin: auto;
+    
+}
+
+#header{
+    text-align: center;
+}
+
+navigator.geolocation.getCurrentPosition(displayPosition);
+
+
+
+
+
