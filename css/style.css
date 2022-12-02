@@ -1,9 +1,15 @@
 .myfooter {
-    text-decoration: underline;
-    text-align: center;
+    text-align: center;   
 }
 
+.fa-youtube {
+    color: #ff0000
+}
 
-#welcome{
-    text-align: center;
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-twitter {
+    color: #1d9bf0;
 }
