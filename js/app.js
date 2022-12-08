@@ -60,6 +60,9 @@ function runSearchPark()
    //Select the selected value from the park
     const statesList = document.getElementById("statesList");
     const selectedValue = statesList.value;
+
+
+
     
     let length = nationalParksArray.length;
     let ulElment = document.getElementById("parkListAreaUl");
