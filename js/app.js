@@ -2,7 +2,7 @@ window.onload = function LoadData() {
 
     initStatesDropdown();
     initParkDropDown();
-    document.getElementById("searchButton").addEventListener("click", runSearch);
+    document.getElementById("searchParkButton").addEventListener("click", runSearchPark);
   
 
 };
@@ -55,4 +55,29 @@ function runSearch()
 
 }
 
+function runSearchPark()
+{
+   //Select the selected value from the park
+    const statesList = document.getElementById("statesList");
+    const selectedValue = statesList.value;
+    
+    let length = nationalParksArray.length;
+    let ulElment = document.getElementById("parkListAreaUl");
+    const parkListBystate = nationalParksArray.filter(parks => {
+        return parks.State === selectedValue;
+      });
+    for (var i = 0; i < parkListBystate.length ; i++) {
+        ulElment.innerHTML += '<li>'+parkListBystate[i]["LocationName"]+'</li>';
+    }
+    //serch natinal park by state
+    // put it list 
+    // create html part (for loop)
+    
+    
+//Select the selected value from the park
+    // const parkList = document.getElementById("parkList");
+    // const selectedPark = parkList.value
+    // alert(selectedValue + " - " + selectedPark);
+
+}
 

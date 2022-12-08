@@ -1,0 +1,30 @@
+body{
+
+
+background: url(mountain3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+} 
+
+.main-container {
+    max-width: 1300px;
+    height: auto;
+    border: 1px red solid;
+    text-align: center;
+    margin: 200px auto;
+}
+
+.parkListArea ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.parkListArea ul, li {
+    width: 100%;
+    margin-top: 20px;
+}

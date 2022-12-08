@@ -1,6 +1,4 @@
-.myfooter {
-    text-align: center;   
-}
+
 
 .fa-youtube {
     color: #ff0000
@@ -13,3 +11,66 @@
 .fa-twitter {
     color: #1d9bf0;
 }
+
+
+body{
+background: url(mountain.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+#h3{
+    
+    color:#1d4b6af9;
+    position: absolute;
+    top: 300px;
+    right: 200px;
+
+    
+
+}
+
+.myfooter{
+    position: fixed;
+    bottom: 0;
+    left: 1800px;   
+}
+
+
+.navbar-brand{
+    color: #5f5e5e;
+}
+
+.form-control {
+position: absolute;
+text-align: center;
+top: 300px;
+left: 600px;
+height: 50px;
+width: 1000px;
+
+margin: 0;
+padding: 0;
+word-wrap: break-word;
+margin-top: -37px;
+
+display: flex;
+border: none;
+outline: none;
+font-size: 30px;
+
+}
+
+/*search bar button*/
+.btn{
+    position: absolute;
+    top: 260px;
+    left: 1620px;
+    
+}
+
+
+
