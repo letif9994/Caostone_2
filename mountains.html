@@ -13,6 +13,9 @@
 
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/mountains.css">
+
 
     <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/27e8a6a700.js" crossorigin="anonymous"></script>
@@ -20,14 +23,14 @@
 
 <body>
     
-    <header>
+    <header >
 
         <!-- place navbar here -->
         <nav>
             <nav class="navbar navbar-expand-sm navbar-light ">
                 <div class="container">
 
-                    <a class="navbar-brand" href="/index.html" > <i class="fa-solid fa-house-chimney"></i>  NP&M</a>
+                    <a class="navbar-brand" href="index.html" > <i class="fa-solid fa-house-chimney"></i>  NP&M</a>
 
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -36,15 +39,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            
+                            
                             <li class="nav-item">
-        
-                            </li>
-                            <li class="tree">
-                                <a class="nav-link" href="nationalParks.html"><i class="fa-sharp fa-solid fa-tree"></i> National Parks</a>
-                            </li>
-                            <li class="nav-item">
+                            <a class="nav-link" href="nationalParks.html"><i class="fa-solid fa-tree"></i>National Parks</a>
+                          
 
-                            <a class="nav-link" href="mountains.html"><i class="fa-solid fa-mountain-sun"></i>Mountains</a>
                             </li>
             
                         </ul>
@@ -57,9 +57,18 @@
 
             </nav>
     </header>
+
+    <main>
+        <div class="mountain-main-container">
+            <ul id="mouantain-ul">
+                
+            </ul>
+        </div>
+    </main>
+        
+   
     
-  
-        <h1 class="main-header">Welcome to National Parks and Mountains Search Engine! </h1>
+    
     
     <footer>
         <!-- place footer here -->
@@ -69,12 +78,7 @@
             Facebook
             <a class="myfooter_links" href="https://www.twiiter.com"></a></a><i class="fa-brands fa-twitter"></i>
             Twitter
-
-        
         </div>
-        
-          
-          
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -86,13 +90,13 @@
     </script>
 
     <!-- Custom JavaScript-->
+
+   
     <script src="js/locationData.js"></script>
     <script src="js/mountainData.js"></script>
     <script src="js/nationalParkData.js"></script>
     <script src="js/parkTypeData.js"></script>
-    <script src="js/app.js"></script>
-    <div class="her">
-    </div>
-</body>
+    <script src="js/mu.js"></script>
+    <script src="js/nationalPark.js"></script>    
 
 </html>

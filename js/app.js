@@ -3,8 +3,6 @@ window.onload = function LoadData() {
     initStatesDropdown();
     initParkDropDown();
     document.getElementById("searchParkButton").addEventListener("click", runSearchPark);
-  
-
 };
 
 function initStatesDropdown() {
@@ -23,6 +21,9 @@ function initStatesDropdown() {
     statesList.appendChild(theOption); //Adding to the dropdown
     }
 }
+
+
+
 
 function initParkDropDown() {
 
@@ -61,17 +62,51 @@ function runSearchPark()
     const statesList = document.getElementById("statesList");
     const selectedValue = statesList.value;
 
-
-
+    const parkTypeList = document.getElementById("parkList");
+    const selectedValueParkType = parkTypeList.value;
     
-    let length = nationalParksArray.length;
     let ulElment = document.getElementById("parkListAreaUl");
+    
     const parkListBystate = nationalParksArray.filter(parks => {
         return parks.State === selectedValue;
       });
-    for (var i = 0; i < parkListBystate.length ; i++) {
-        ulElment.innerHTML += '<li>'+parkListBystate[i]["LocationName"]+'</li>';
+     
+    const parkListByType = parkListBystate.filter(parksByType => {
+        return parksByType.LocationName.includes(selectedValueParkType);
+    });
+    if (parkListByType.length == 0) {
+        let reselut = confirm(selectedValue + " dose not have " + selectedValueParkType + "Do you want to see other parks insted?");
+        if (reselut) {
+            for (var i = 0; i < parkListBystate.length ; i++) {
+                ulElment.innerHTML += '<li>'+
+                    '<span>LocationName: '+
+                    parkListBystate[i]["LocationName"]+
+                    '</span>'+
+                    '<address>City:'+
+                    parkListBystate[i]["City"]+
+                    '</address>'+
+                    '<address>Address:'+
+                    parkListBystate[i]["Address"]+
+                    '</address>'
+                '</li>';
+            }
+        }
+    } else {
+        for (var i = 0; i < parkListByType.length ; i++) {
+            ulElment.innerHTML += '<li>'+
+                '<span>LocationName: '+
+                    parkListByType[i]["LocationName"]+
+                '</span>'+
+                '<address>City:'+
+                    parkListByType[i]["City"]+
+                '</address>'+
+                '<address>Address:'+
+                    parkListByType[i]["Address"]+
+                '</address>'
+            '</li>';
+        }
     }
+    
     //serch natinal park by state
     // put it list 
     // create html part (for loop)
@@ -84,3 +119,15 @@ function runSearchPark()
 
 }
 
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}

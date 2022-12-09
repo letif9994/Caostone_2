@@ -13,64 +13,45 @@
 }
 
 
+
+
+
 body{
-background: url(mountain.jpg) no-repeat center center fixed; 
+background: url(Advanture.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-    
+  background-size: cover;     
 }
 
-#h3{
-    
-    color:#1d4b6af9;
-    position: absolute;
-    top: 300px;
-    right: 200px;
-
-    
-
-}
 
 .myfooter{
-    position: fixed;
+    text-align: center;
+    margin-top: 30%;
+    color: #d8d2d2;
+    position: fixed; 
     bottom: 0;
-    left: 1800px;   
+    left: 0;
+    right: 0;
+    height: 50px;
+
+
 }
 
 
 .navbar-brand{
-    color: #5f5e5e;
+    color: #3c3a3a;
 }
 
-.form-control {
-position: absolute;
-text-align: center;
-top: 300px;
-left: 600px;
-height: 50px;
-width: 1000px;
 
-margin: 0;
-padding: 0;
-word-wrap: break-word;
-margin-top: -37px;
-
-display: flex;
-border: none;
-outline: none;
-font-size: 30px;
-
-}
-
-/*search bar button*/
-.btn{
-    position: absolute;
-    top: 260px;
-    left: 1620px;
+.main-header{
+    color: #525356;
+    margin-left: 25%;
+    margin-top: 10%;
+    inline-size:900px;
+    text-align: center;
+    font-weight: bolder;
     
+
 }
-
-
 

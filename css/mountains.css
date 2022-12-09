@@ -1,0 +1,37 @@
+span {
+    font-weight: bold;
+}
+
+
+.mountain-main-container li{
+    list-style: none;
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.mountain-main-container li img {
+    float: left;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.mountain-main-container li span {
+    float: left;
+}
+
+.mountain-main-container li p {
+    margin-left: 20px;
+}
+
+body{
+    
+background-image: -webkit-linear-gradient(147deg, #e1d169 0%, #cc5858 74%);
+background-image: -moz-linear-gradient(147deg, #edda5e 0%, #c35757 74%);
+background-image: -o-linear-gradient(147deg, #e2d15f 0%, #bf5151 74%);
+background-image: linear-gradient(147deg, #e8d663 0%, #ca5050 74%);
+
+}
+
+
+
